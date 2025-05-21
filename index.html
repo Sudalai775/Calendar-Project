@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <div class="container">
+        <div class="heading-container">
+           
+        </div>
+
+        <div class="card">
+            <input type="text" placeholder="Enter Your Degree Name">
+           <center> <h1 class="calendar-heading">BCA Timetable</h1></center>
+            <div class="calendar-toolbar">
+                <button id="prevMonth" class="month-btn">◄</button>
+                <div id="month" class="current-month"></div>
+                <button id="nextMonth" class="month-btn">►</button>
+                <button id="todayButton" class="todayButton">Today</button>
+            </div>
+            <div class="weekdays">
+                <div class="weekday-name">Sun</div>
+                <div class="weekday-name">Mon</div>
+                <div class="weekday-name">Tue</div>
+                <div class="weekday-name">Wed</div>
+                <div class="weekday-name">Thu</div>
+                <div class="weekday-name">Fri</div>
+                <div class="weekday-name">Sat</div>
+            </div>
+            <div id="days" class="calendar-days"></div>
+        </div>
+
+        <div id="timetable" class="timetable hidden">
+            <button id="back" class="btn">Back</button>
+            <div id="selectedDate"></div>
+            <div id="timetableBody"></div>
+        </div>
+
+        <table id="holiday" class="hidden">
+            <tbody id="holidayBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body></html>
